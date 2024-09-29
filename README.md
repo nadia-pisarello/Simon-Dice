@@ -1,6 +1,3 @@
-Claro, aquí te dejo un `README.md` para tu juego de Simón Dice con un solo nivel de dificultad:
-
----
 
 # Simón Dice
 
