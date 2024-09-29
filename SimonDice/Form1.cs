@@ -20,10 +20,10 @@ namespace SimonDice
             timer1.Tick += Timer_Mostrar_Secuencia;
             timer2.Interval = 500;
             timer2.Tick += Timer_Restaurar_Color;
+            timer3.Interval = 200;
+            timer3.Tick += Timer_Restaurar_Color;
 
-        }
-
-       
+        }              
 
         private void inicio_Click(object sender, EventArgs e)
         {
@@ -61,29 +61,39 @@ namespace SimonDice
             azul.BackColor = Color.Cyan;
             amarillo.BackColor = Color.Yellow;
             timer2.Stop();  
+            timer3.Stop();
         }
 
         private void verde_Click(object sender, EventArgs e)
         {
             lista_color_user.Add("verde");
+            verde.BackColor = Color.ForestGreen;
+            timer3.Start();
             Verificar_Secuencia();
+            
         }
 
         private void rojo_Click(object sender, EventArgs e)
         {
             lista_color_user.Add("rojo");
+            rojo.BackColor = Color.Maroon;
+            timer3.Start();
             Verificar_Secuencia();
         }
 
         private void amarillo_Click(object sender, EventArgs e)
         {
             lista_color_user.Add("amarillo");
+            amarillo.BackColor= Color.Gold;
+            timer3.Start();
             Verificar_Secuencia();
         }
 
         private void azul_Click(object sender, EventArgs e)
         {
             lista_color_user.Add("azul");
+            azul.BackColor= Color.LightSkyBlue;
+            timer3.Start();
             Verificar_Secuencia();
         }
 

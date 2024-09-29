@@ -43,6 +43,7 @@
             this.inicio = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.timer3 = new System.Windows.Forms.Timer(this.components);
             this.fondo.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.menu.SuspendLayout();
@@ -242,6 +243,7 @@
         private System.Windows.Forms.Label cont_lb;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Timer timer2;
+        private System.Windows.Forms.Timer timer3;
     }
 }
 
